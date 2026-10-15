@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Create deploy tarball
+        run: tar -cf deploy.tar --exclude=.git --exclude=deploy.tar --exclude=simplied-qa .
       - uses: caprover/deploy-from-github@v1.1.2
         with:
           server: '${{ secrets.CAPROVER_SERVER }}'
