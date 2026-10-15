@@ -24,3 +24,4 @@ The marketing website for **SimpliEd**, the all-in-one school operating system.
 `cd simplied-server && npm start`, then open http://127.0.0.1:3000.
 
 Secrets go only in `simplied-server/.env` (local) or in Vercel Environment Variables. They are never committed.
+ 
